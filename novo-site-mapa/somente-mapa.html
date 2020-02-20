@@ -1,0 +1,97 @@
+
+
+    <style>
+            #mapa {
+              margin-top: 4rem;
+              margin-bottom: 4rem;
+            }
+      
+            #mapa .mapa-item {
+              
+            }
+            #mapa .mapa-circle {
+              background-color: #002d40;
+              border-radius: 50%;
+              border: 2px solid #fff;
+              width: 7rem;
+              height: 7rem;
+              overflow: hidden;
+              position: relative;
+              margin: 0 auto;
+            }
+            .circle-image{
+              width: 100%;
+              vertical-align: middle;
+              border-style: none;
+            }
+      
+            .energia1{
+              position: relative;
+              left: 281px;
+              bottom: -109px;
+              z-index: 10000;
+            }
+      
+            .fabrica.posicao-1{
+              position: relative;
+              left: 275px;
+              top: 116px;
+              z-index: 10000;
+            }
+            
+          </style>
+          
+          <section>
+            <div class="container">
+      
+              <header class="section-header">
+                <h3>asdf asf</h3>
+              </header>
+      
+              <div class="row" id="mapa">
+      
+      
+                    <div class="mapa-item col-md-3 col-3 col-sm-3">
+                      <div class="mapa-circle">
+                        <img src="img/segmentos/navio.png" class="ld ld-wander-v circle-image"> 
+                      </div>
+                    </div>
+      
+                    <div class="mapa-item col-md-3 col-3 col-sm-3">
+                      <div class="mapa-circle">
+                        <img src="img/segmentos/energia-2.png" class="ld ld-wander-v circle-image"> 
+                      </div>
+                    </div>
+      
+      
+                    <div class="mapa-item col-md-3 col-3 col-sm-3">
+                      <div class="mapa-circle">
+                        <img src="img/segmentos/fabrica.png" class="ld ld-wander-v circle-image"> 
+                      </div>
+                    </div>
+      
+      
+                    <div class="mapa-item col-md-3 col-3 col-sm-3">
+                      <div class="mapa-circle">
+                        <img src="img/segmentos/mineracao.png" class="ld ld-wander-v circle-image"> 
+                      </div>
+                    </div>
+              </div>
+              <div class="row">
+                <!--PRECISA CENTRALIZAR AS OUTRAS COISAS-->
+      
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <span class="energia1"><img src="img/segmentos/energia-2.png" width="40" /></span>
+                  <span class="fabrica posicao-1 "><img src="img/segmentos/fabrica.png" width="40" /></span>
+                  <div id="canvas">
+                    <div id="paper">
+                      </svg>
+                    </div>
+                  </div>
+      
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </section>

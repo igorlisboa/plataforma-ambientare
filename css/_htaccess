@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} www.ambientare-sa.com.br$
+
+RewriteRule (.*) https://www.ambientare.com.br/$1 [R=301,L]
+
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
