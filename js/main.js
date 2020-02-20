@@ -323,25 +323,27 @@ $( "efeito-digitacao" ).load(typeWrite());
 
   function typeWrite(){
     var elemento = document.querySelector('.digitacao');
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = ' ';
-    textoArray.forEach(function(letra, i){
-
-
-
-    setTimeout(function(){
-      if (letra == '?'){
-        elemento.innerHTML += letra;
-
-        var br = document.createElement("BR");
-        elemento.appendChild(br);
-
-      }else{
-        elemento.innerHTML += letra;
-      }
-    }, 75 * i)
-
-  });
+    if(elemento){
+      const textoArray = elemento.innerHTML.split('');
+      elemento.innerHTML = ' ';
+      textoArray.forEach(function(letra, i){
+  
+  
+  
+        setTimeout(function(){
+          if (letra == '?'){
+            elemento.innerHTML += letra;
+  
+            var br = document.createElement("BR");
+            elemento.appendChild(br);
+  
+          }else{
+            elemento.innerHTML += letra;
+          }
+        }, 75 * i)
+  
+      });
+    }
 }
 
 
